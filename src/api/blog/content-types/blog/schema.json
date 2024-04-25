@@ -93,6 +93,14 @@
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "blog"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid"
     }
   }
 }
