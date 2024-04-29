@@ -839,9 +839,9 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    categories: Attribute.Relation<
+    category: Attribute.Relation<
       'api::blog.blog',
-      'oneToMany',
+      'manyToOne',
       'api::category.category'
     >;
     slug: Attribute.UID &
@@ -894,9 +894,9 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    blog: Attribute.Relation<
+    blogs: Attribute.Relation<
       'api::category.category',
-      'manyToOne',
+      'oneToMany',
       'api::blog.blog'
     >;
     createdAt: Attribute.DateTime;

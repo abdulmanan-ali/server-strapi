@@ -88,11 +88,11 @@
         }
       }
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "mappedBy": "blog"
+      "inversedBy": "blogs"
     },
     "slug": {
       "pluginOptions": {
