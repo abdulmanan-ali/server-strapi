@@ -107,6 +107,14 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "blog"
+    },
+    "Newsletter": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean"
     }
   }
 }
