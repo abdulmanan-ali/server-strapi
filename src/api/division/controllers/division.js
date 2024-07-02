@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * news-urdu controller
+ * division controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::news-urdu.news-urdu');
+module.exports = createCoreController('api::division.division');
